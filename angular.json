@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tableroUnificadoCifras"
+    }
+  },
+  "defaultProject": "tableroUnificadoCifras",
+  "cli": {
+    "analytics": "1b4c7b7a-388e-484b-ae3d-165bec7d1ad0"
+  }
 }
