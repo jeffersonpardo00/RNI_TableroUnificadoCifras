@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LayoutModule } from '@angular/cdk/layout';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -12,7 +12,6 @@ import { MatListModule } from '@angular/material/list';
   declarations: [],
   imports: [
     CommonModule,
-    LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -20,7 +19,6 @@ import { MatListModule } from '@angular/material/list';
     MatListModule
   ],
   exports: [
-    LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,

@@ -18,6 +18,10 @@ const routes: Routes = [
           path: 'home',
           loadChildren: () => import ('./home/home.module').then (m => m.HomeModule)
         },
+        {
+          path: 'drgi',
+          loadChildren: () => import ('./drgi/drgi.module').then (m => m.DRGIModule)
+        }
       ]
 
   }
