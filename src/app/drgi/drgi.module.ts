@@ -6,9 +6,10 @@ import { IndexComponent } from './components/index/index.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { MaterialModule } from '../material/material.module';
+import { VictimasIncluidasComponent } from './components/victimas-incluidas/victimas-incluidas.component';
 
 @NgModule({
-  declarations: [IndexComponent],
+  declarations: [IndexComponent, VictimasIncluidasComponent],
   imports: [
     CommonModule,
     DRGIRoutingModule,
