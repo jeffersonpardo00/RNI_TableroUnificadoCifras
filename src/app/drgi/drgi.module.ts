@@ -7,9 +7,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 
 import { MaterialModule } from '../material/material.module';
 import { VictimasIncluidasComponent } from './components/victimas-incluidas/victimas-incluidas.component';
+import { RequerimientosFrecuentesComponent } from './components/requerimientos-frecuentes/requerimientos-frecuentes.component';
+import { IndividualComponent } from './components/individual/individual.component';
 
 @NgModule({
-  declarations: [IndexComponent, VictimasIncluidasComponent],
+  declarations: [IndexComponent, VictimasIncluidasComponent, RequerimientosFrecuentesComponent, IndividualComponent],
   imports: [
     CommonModule,
     DRGIRoutingModule,

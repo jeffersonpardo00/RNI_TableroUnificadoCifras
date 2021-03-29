@@ -10,6 +10,8 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class IndexComponent {
 
+   panelOpenState = false;
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
@@ -17,5 +19,6 @@ export class IndexComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+
 
 }

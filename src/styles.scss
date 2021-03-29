@@ -25,6 +25,7 @@ $breakpoint-lg: 1360px;
   }
 }
 
+html, body { height: 100%; }
 
 body
 {
@@ -37,6 +38,13 @@ body
 .pagF
 {
     background-color: $Fondo;
+    width: 100%;
+    @include media(lg)
+    {
+        width: 1023px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .fotoBackground
@@ -91,7 +99,7 @@ body
 .headerOsc
 {
     background-color: $AzulMedio;
-    padding: 1em;
+    padding: 1em 3em;
     div{
         color: white;
     }
@@ -289,7 +297,7 @@ body
 
 #paginaIndice
 {
-    height: 100vh;
+    height: 93vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -512,7 +520,7 @@ body
         align-items: center;
         z-index: 10;
         right: 1%;
-        top: 3%;
+        top: 1%;
         cursor: pointer;
 
 

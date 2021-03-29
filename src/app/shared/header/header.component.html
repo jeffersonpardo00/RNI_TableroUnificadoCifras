@@ -1,3 +1,27 @@
-<div class="navi">
-    <a routerLink="/home">Víctimas Incluidas</a>
-</div>
+<mat-toolbar color="primary">
+
+    <mat-toolbar-row>
+        <div class="row between-xs middle-xs header-row">
+            <nav>
+                <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                <a mat-button routerLink="/drgi" routerLinkActive="active">DRGI</a>
+                <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+            
+            </nav>
+            
+            <div class="CerrarSesionWraper">
+                <a href="http://vivantopruebas.unidadvictimas.gov.co/Menu/Menu">
+                    <div class="CerrarSesion">
+                        <div class="cerrarSesionDesc">
+                            CERRAR SESION
+                        </div>
+                        <img src="assets/images/boton-de-encendido.svg" alt="">
+                    </div>
+                </a>
+            </div>
+              
+        </div>
+        
+    </mat-toolbar-row>
+
+</mat-toolbar>
