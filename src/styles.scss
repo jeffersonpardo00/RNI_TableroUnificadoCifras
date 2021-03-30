@@ -505,7 +505,7 @@ body
 
 .CerrarSesionWraper
 {
-    width: 100%;
+    width: 20%;
     position: relative;
     height: 10%;
     .CerrarSesion
@@ -556,4 +556,22 @@ link
 .noLink
 {
     color:#4b4b4b !important;
+}
+
+.menuTablero
+{
+    background-color: $AzulOscuro;
+    background-image: linear-gradient(to right, $AzulOscuro 0%, $AzulOscuro 51%, #00b8ff 100%);
+
+    .menuTableroContent
+    {
+        position: relative;
+        width: 100%;
+        @include media(lg)
+        {
+            width: 1023px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

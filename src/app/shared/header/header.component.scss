@@ -1,0 +1,60 @@
+.logoCifrasB
+{
+    width: 10%;
+}
+
+    nav{
+        a{
+            color: white;
+            margin: 0 0.2rem;
+            border-radius: 0;
+        }
+        a:hover{
+            text-decoration: none;
+            background-color: #3772ff;
+            border: 0px solid #01b6fe;
+            border-bottom-width: 1px;
+            border-radius: 0;
+        }
+    }
+
+
+.navbar-toggler
+{
+    background-color: transparent;
+    border: none !important;
+    width: 10%;
+    max-width: 60px;
+    img{
+        width: 60%;
+    }
+    
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus
+{
+    border: none !important;
+    img{
+        width: 60%;
+    }
+}
+
+
+.navbar
+{
+    justify-content:start;
+}
+
+.navbar-brand
+{
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+
+
+    @media (max-width:767px ) 
+    { 
+        font-size: 0.8rem;
+    }
+}
