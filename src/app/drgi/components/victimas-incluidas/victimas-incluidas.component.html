@@ -1,3 +1,34 @@
-<iframe width="100%" height="90%" 
-src="https://app.powerbi.com/view?r=eyJrIjoiY2Y5YWI3NGItOTYwZi00YzEyLWI2YWEtMDU0MTRmOTBkN2RhIiwidCI6IjU5NjRkOWYyLWFlYjYtNDhkOS1hNTNkLTdhYjVjYjFkMDdlOCIsImMiOjR9&pageName=ReportSection" 
-frameborder="0"></iframe>
+<div class="contentTemas">
+    <div class="cuadroTemas">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <div class="tituloTemas">
+                    {{title}}
+                </div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+            <div>
+                <ul class="cuatroTemas">
+                    <li class="Negrita">NÚMERO DE SOLICITUDES DE INCLUSION EN EL RUV</li>
+                    <li class="Negrita">NÚMERO DE VÍCTIMAS INCLUIDAS EN EL RUV</li>
+                    <li class="Negrita">NÚMERO DE VÍCTIMAS SUJETOS DE ATENCIÓN Y REPARACIÓN</li>
+                    <li class="Negrita">NÚMERO DE VÍCTIMAS POR ÚLTIMO LUGAR DE UBICACIÓN</li>
+                    <li class="Negrita">NÚMERO DE VÍCTIMAS INCLUIDAS EN BASES MIGRADAS - ICBF y DAICMA</li>
+                </ul>
+            </div>
+        </mat-expansion-panel>
+    </div>
+    
+    <div class="iframeCanva">
+        <div class="content">
+            <iframe width="100%" height="90%" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiY2Y5YWI3NGItOTYwZi00YzEyLWI2YWEtMDU0MTRmOTBkN2RhIiwidCI6IjU5NjRkOWYyLWFlYjYtNDhkOS1hNTNkLTdhYjVjYjFkMDdlOCIsImMiOjR9&pageName=ReportSection" 
+            frameborder="0">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+

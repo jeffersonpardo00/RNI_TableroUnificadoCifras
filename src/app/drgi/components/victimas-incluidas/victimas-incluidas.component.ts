@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VictimasIncluidasComponent implements OnInit {
 
+  title = 'VÍCTIMAS INCLUIDAS';
+  panelOpenState = true;
   constructor() { }
 
   ngOnInit(): void {

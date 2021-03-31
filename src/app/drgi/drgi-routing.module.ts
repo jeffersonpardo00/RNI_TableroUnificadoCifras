@@ -21,6 +21,10 @@ const routes: Routes = [
         component: RequerimientosFrecuentesComponent
       },
       {
+        path: 'requerimientos_frecuentes',
+        component: RequerimientosFrecuentesComponent
+      },
+      {
         path: 'individual',
         component: IndividualComponent
       }

@@ -25,15 +25,36 @@ $breakpoint-lg: 1360px;
   }
 }
 
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
 html, body { height: 100%; }
 
 body
 {
     margin: 0;
     padding: 0;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     //font-size: 12pt;
 }
+
 
 .pagF
 {
@@ -557,7 +578,7 @@ link
 {
     color:#4b4b4b !important;
 }
-
+//---------------comienzo angular------------
 .menuTablero
 {
     background-color: $AzulOscuro;
@@ -573,5 +594,130 @@ link
             margin-left: auto;
             margin-right: auto;
         }
+    }
+}
+
+//---------------indices internas-----------
+
+
+.iframeCanva
+{
+    @include aspect-ratio(1280,650); //1280,720
+
+}
+
+.mat-toolbar, 
+.mat-toolbar h1, 
+.mat-toolbar h2, 
+.mat-toolbar h3, 
+.mat-toolbar h4, 
+.mat-toolbar h5, 
+.mat-toolbar h6
+.mat-list-item,
+.mat-expansion-panel-header,
+.mat-h1, .mat-headline, .mat-typography h1 
+.mat-typography 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+}
+
+.reqFrec
+{
+    padding-top: 1rem;
+    color: $GrisLetras;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-left: 24px;
+    
+}
+
+.ExpanIndex{
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%) !important;
+}
+
+.mat-list-item-content,
+.mat-expansion-panel-body,
+.mat-expansion-panel-header
+{
+    color: $GrisLetras;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        font-weight: 400;
+      
+}
+
+.mat-list-item-content
+{
+    padding: 0 24px !important;
+}
+
+.TituloIndice
+{
+    background-color: #E6Effd;
+    font-weight: bold;
+    color: #32569c;
+    height: auto !important; 
+
+    background-image: linear-gradient(to right, #bdd7ff 0%, #E6Effd 51%, #fbfbfb 100%);
+    span 
+    {
+        font-size: 1.1rem;
+    }
+
+   
+}
+
+.contentFrecuentes
+{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include media(lg)
+    {
+        width: 1023px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mat-expansion-panel
+    {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.active-list-item
+{
+    background-color: #a6b2cc;
+}
+
+.contentTemas
+{
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+    height: 100%;
+    //overflow: hidden;
+
+    .cuadroTemas
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .tituloTemas
+    {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: $GrisLetras;
+    }
+
+    .cuatroTemas li
+    {
+        border: 0px solid $AzulNocturno;
+        border-left-width: 1px;
+        padding-left: 1rem;
     }
 }
