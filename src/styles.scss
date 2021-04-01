@@ -688,9 +688,9 @@ link
 
 }
 
-.active-list-item
+.mat-expansion-panel-content
 {
-    background-color: #a6b2cc;
+    padding-left: 1rem;
 }
 
 .contentTemas
@@ -707,6 +707,7 @@ link
         padding-bottom: 1rem;
     }
 
+    .tituloTemasN,
     .tituloTemas
     {
         font-weight: bold;
@@ -714,10 +715,31 @@ link
         color: $GrisLetras;
     }
 
+    .tituloTemasN
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .cuatroTemas li
     {
         border: 0px solid $AzulNocturno;
         border-left-width: 1px;
         padding-left: 1rem;
+    }
+}
+
+.expandLinks
+{
+    a{
+        margin-bottom: 0.5rem;
+    }
+}
+
+.mat-expansion-panel
+{
+    .mat-list-item-content
+    {
+        padding: 0 0 !important;
     }
 }

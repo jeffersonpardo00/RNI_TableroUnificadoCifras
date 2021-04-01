@@ -9,13 +9,11 @@
           </mat-expansion-panel-header>
             
         <div id="collapseActualizaciones">
-            <div >
+            <div class="contenidoRequerimientos">
+            
             <h4>
-                NOVEDADES Y ACTUALIZACIONES 
-            </h4>
-            <h5>
                 Actualización 
-            </h5>
+            </h4>
                 <p>
                     Una actualización en el Registro Único de Víctimas consiste en la inclusión de 
                     novedades en la información respecto de los datos personales de las víctimas. 
@@ -74,9 +72,9 @@
                     </li>
                 </ul>
     
-                <h5>
+                <h4>
                     Novedad 
-                </h5>
+                </h4>
     
                 <p>
                     Una novedad supone un cambio sustancial sobre la información de las personas 
@@ -138,11 +136,7 @@
         </mat-panel-title>
         </mat-expansion-panel-header>
     
-          <div>
-            <h4>
-             RECEPCIÓN DE SOLICITUDES DE INGRESO AL REGISTRO ÚNICO DE VÍCTIMAS (RUV) 
-            </h4>
-            
+          <div class="contenidoRequerimientos">
              <p>
                  Las personas que se consideren víctimas del conflicto deben 
                  acercarse ante una oficina del Ministerio Público (personerías 
@@ -181,9 +175,9 @@
                  para emitir una decisión sobre su inscripción en el RUV. 
              </p>
     
-             <h5>
+             <h4>
                  Toma de Declaración en Línea
-             </h5>
+             </h4>
     
              <p>
                  Con la intención de facilitar la toma de declaraciones y continuar con el trámite 
@@ -208,4 +202,477 @@
              
          </div>
     </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        TIPOS DE SOLICITUDES DE INGRESO AL REGISTRO ÚNICO DE VÍCTIMAS (RUV)
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+        <div class="contenidoRequerimientos">
+                    
+            <p>
+                La solicitud de inscripción en el Registro Único de Víctimas (RUV) 
+                es una declaración que deben realizar todas aquellas personas que se 
+                consideren víctimas del conflicto armado e, en la cual deberán brindar 
+                toda la información requerida en un formato diseñado para tal fin y 
+                contar de manera detallada las circunstancias de tiempo, modo y lugar en que 
+                se dieron los hechos victimizantes. 
+            </p>
+
+            <h4>
+                Declaración tipo Individual
+            </h4>
+
+            <p>
+                Destinada para las solicitudes que realiza un individuo o grupo familiar 
+                que se considera víctima de acuerdo con lo establecido en la Ley 1448 de 
+                2011 y los Decretos Ley 4633, 4634 y 4635 de 2011.  
+            </p>
+
+            <p>
+                Tales solicitudes se reciben a través del Formato Único de Declaración (FUD), 
+                herramienta por medio de la cual el Ministerio Público y los consulados 
+                reciben las solicitudes de inscripción en el RUV de personas que se consideran 
+                víctimas del conflicto armado en Colombia, bajo el marco normativo de la Ley 
+                1448 de 2011 y los Decretos Ley 4633, 4634 y 4635 de 2011. 
+            </p>
+
+            <h4>
+                Declaración tipo Masivo
+            </h4>
+
+            <p>
+                Destinada para solicitudes de inscripción en el RUV por un mismo evento (mismas 
+                circunstancias de tiempo, modo y lugar) que afecta a un número de personas igual 
+                o mayor a 10 hogares o 50 personas.  
+            </p>
+
+            <p>
+                Adicional al FUD básico de cuatro hojas, más los anexos de los hechos 
+                victimizantes, este tipo de solicitudes requiere contar con dos elementos 
+                adicionales: 
+            </p>
+
+            <ol>
+                <li>
+                    Un acta elaborada y firmada, por lo menos, por la alcaldía municipal en 
+                    acompañamiento de la personería municipal. En esta se deben describir de 
+                    forma suficiente las circunstancias de tiempo, modo y lugar en las que se 
+                    presentaron los hechos declarados e incorporar un informe de verificación 
+                    de estos. 
+                </li>
+                <li>
+                    Un anexo n.° 13 por cada grupo familiar afectado. Este anexo es el formato 
+                    único y de uso obligatorio establecido por la Unidad para las Víctimas, 
+                    en el cual se debe hacer el diligenciamiento de la información y la 
+                    caracterización de las personas afectadas por un hecho victimizante de 
+                    tipo masivo. 
+                </li>
+            </ol>
+            
+            <h4>
+                Declaración tipo Colectivo
+            </h4>
+
+            <p>
+                Respecto de las víctimas en términos colectivos, es preciso aclarar que, 
+                de conformidad con lo dispuesto en el artículo 152 de la Ley 1448 de 2011, existen 
+                tres categorías de sujetos de reparación colectiva, estos son: grupos y organizaciones 
+                sociales y políticas, los cuales son entendidos como sujetos no étnicos y; comunidades, 
+                que pueden tratarse tanto de sujetos étnicos como no étnicos. 
+            </p>
+
+            <p>
+                En su caso, las solicitudes se reciben por medio del Formato Único de Declaración de 
+                Sujetos Colectivos (FSC), el cual recaba información de identificación del sujeto 
+                colectivo, sus características, los hechos y daños sufridos en el marco del conflicto, 
+                la afectación a cada uno de sus atributos, entre otra información relevante para el 
+                análisis del caso. 
+            </p>
+
+    </div>
+
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        HECHOS VICTIMIZANTES
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="contenidoRequerimientos">
+        
+         <p>
+             Un hecho victimizante es un evento en que la persona ha sufrido algún daño por violaciones a las normas internacionales de Derechos Humanos o por infracciones al Derecho Internacional Humanitario, previstas en el artículo 3 de la Ley 1448 de 2011. Dentro del Registro Único de Víctimas (RUV) se operacionalizaron 13 hechos victimizantes para enmarcar tales daños, los cuales se describen a continuación. 
+         </p>
+
+         <p>
+            1. Acto terrorista / Atentado / Combates / Enfrentamientos / Hostigamientos 
+         </p>
+
+         <ul>
+             <li>
+                 Actos de Terrorismo: hechos que atentan contra la vida y la integridad 
+                 de la persona, los cuales tienen por objeto causar terror dentro de la 
+                 población y “pueden ser perpetrados a escala individual o masiva, por 
+                 una gran variedad de actores (…) desde meras amenazas concebidas para 
+                 sembrar el pánico entre el público hasta las armas de destrucción masiva 
+                 y puede incluir negativamente en una variedad de personas a quienes el 
+                 Derecho internacional acuerda protecciones particulares (…)”. 
+             </li>
+             <li>
+                 Atentado: es todo ataque dirigido contra una persona, sus derechos o bienes. 
+                 El artículo 3º común a los cuatro Convenios de Ginebra de 1949 proscribe 
+                 dicho accionar, señalando que “(…) se prohíbe, frente a las personas 
+                 protegidas, los atentados contra la vida y la integridad corporal, 
+                 especialmente el homicidio en todas sus formas. (…)”.
+             </li>
+             <li>
+                 Combate: consiste en un contacto armado que se desarrolla entre miembros 
+                 de la Fuerza Pública u otros servidores públicos y grupos armados al 
+                 margen de la ley como resultado de una acción militar ofensiva.
+             </li>
+             <li>
+                 Enfrentamiento: todo choque armado que se desarrolla entre integrantes 
+                 de grupos armados al margen de la ley.
+             </li>
+             <li>
+                 Hostigamiento: es un acto ejercido por un grupo armado contra un 
+                 adversario a efectos de producir un ataque sorpresivo sin el objetivo 
+                 de producir enfrentamientos posteriores. La intensidad del ataque es 
+                 inferior a la capacidad de respuesta del adversario.
+             </li>
+         </ul>
+
+         <p>
+            2. Amenaza 
+         </p>
+
+         <p>
+             Esta se entiende como la acción de un actor del conflicto armado interno, 
+             que comprende la probabilidad de ocurrencia de una afectación objetiva o 
+             subjetiva dirigida contra un sujeto o grupo determinado o determinable y 
+             que pueda ser convalidada objetivamente. Así, la Corte Constitucional la 
+             ha definido como “una violación potencial que se presenta como inminente 
+             y próxima”. En consecuencia, puede entenderse como el anuncio o indicio 
+             de acciones que puedan llegar a causar daño a la vida, integridad, libertad 
+             o seguridad de una persona o de su familia. La amenaza puede ser directa 
+             cuando está expresamente dirigida contra la víctima o indirecta cuando 
+             se presume inminencia de daño como resultado de situaciones emergentes 
+             en el contexto de la víctima. La amenaza está constituida por un hecho o 
+             una situación de carácter externo y requiere la decisión o voluntariedad de 
+             causar un daño.
+         </p>
+
+         <p>
+            3. Delitos contra la libertad y la integridad sexual en el desarrollo del 
+            conflicto armado 
+         </p>
+
+
+         <p>
+             El Instituto Colombiano de Bienestar Familiar (ICBF) ha señalado que la 
+             violencia sexual es “cualquier acto u omisión orientado a vulnerar el 
+             ejercicio de los derechos humanos, sexuales o reproductivos, dirigidos 
+             a mantener o a solicitar contacto sexual, físico, verbal o a participar 
+             en interacciones sexuales mediante el uso de la fuerza o la amenaza de 
+             usarla, la intimidación, la coerción, el chantaje, la presión indebida, 
+             el soborno, la manipulación o cualquier otro mecanismo que anule o limite 
+             la voluntad personal de decidir acerca de la sexualidad y de la reproducción”. 
+             Para el caso en particular, esto se circunscribe en el marco del conflicto 
+             armado interno o en situaciones que guarden relación cercana y suficiente 
+             con el mismo. 
+         </p>
+
+         <p>
+            4. Desaparición forzada 
+         </p>
+
+         <p>
+             Es la privación de la libertad de una o más personas, cualquiera que fuere 
+             su forma cometida por actores armados, a raíz de situaciones de conflicto 
+             armado. Este se caracteriza por ser un hecho victimizante complejo, múltiple 
+             y acumulativo, que atenta contra un conjunto diverso de derechos fundamentales. 
+             Así las cosas, la desaparición forzada se consuma en dos actos: la privación 
+             de la libertad de una persona seguida de su ocultamiento y además la negativa 
+             a reconocer dicha privación y/o de dar información sobre su paradero, 
+             sustrayéndola del amparo legal. 
+         </p>
+
+         <p>
+            5. Desplazamiento forzado
+         </p>
+
+         <p>
+             Es víctima de desplazamiento forzado toda persona que se ha visto forzada a 
+             migrar dentro del territorio nacional, abandonando su localidad de residencia 
+             o actividades económicas habituales, porque su vida, su integridad física, su 
+             seguridad o libertad personales han sido vulneradas o se encuentran directamente 
+             amenazadas con ocasión de las violaciones graves y manifiestas a las normas 
+             internacionales de derechos humanos, ocurridas con ocasión del conflicto, en 
+             situaciones que guarden relación cercana y suficiente con el mismo o dentro 
+             de circunstancias de violencia generalizada. 
+         </p>
+
+         <p>
+            6. Homicidio
+         </p>
+
+         <p>
+             Este hecho se configura cuando se termina la vida de otra persona de manera 
+             violenta, en el marco del conflicto armado o en situaciones que guarden relación 
+             cercana y suficiente con el mismo. La Constitución Política de Colombia, en 
+             su artículo 11, establece que “el derecho a la vida es inviolable”. En este
+              mismo sentido, numerosas normas nacionales e internacionales lo definen como un derecho inherente e inviolable que debe ser protegido por los Estados. La prohibición del homicidio de civiles y personas fuera de combate es una de las garantías de más larga trayectoria en el Derecho Internacional Humanitario. Con respecto a estas personas, el artículo 3° común a los cuatro Convenios de Ginebra de 1949, que se refiere específicamente a los conflictos no internacionales, prohíbe el “homicidio en todas sus formas”. 
+         </p>
+         
+         <p>
+             7. Minas antipersonal / Munición sin explotar / Artefacto explosivo improvisado 
+         </p>
+         
+         <ul>
+             <li>
+                 Mina Antipersonal (MAP): se entiende como todo “artefacto explosivo 
+                 concebido para que explosione por la presencia, la proximidad o el 
+                 contacto de una persona, y que en caso de explosionar tenga la 
+                 potencialidad de incapacitar, herir y/o matar a una o más personas”. 
+                 Las minas antipersonales pueden durar activas durante varios años, 
+                 estar instaladas bajo tierra o cerca del suelo y explotar ante el 
+                 contacto o cercanía de una persona o animal. No pueden ser dirigidas 
+                 hacia un objetivo específico, razón por la cual hieren o lastiman de 
+                 manera indiscriminada.
+             </li>
+             <li>
+                 Munición sin explotar (MUSE): son las “municiones explosivas que han 
+                 sido cargadas, su fusible colocado, armadas o, por el contrario, preparadas 
+                 para su uso o ya utilizada. Puede haber sido disparada, arrojada, lanzada 
+                 o proyectada, pero permanece sin explotar debido ya sea a su mal 
+                 funcionamiento, al tipo de diseño o a cualquier otra razón”. 
+             </li>
+             <li>
+                 Artefactos Explosivos Improvisados (AEI): son artefactos fabricados de 
+                 manera artesanal, diseñados con el propósito de causar la muerte o daño 
+                 físico, utilizando el poder de una detonación. Típicamente están 
+                 compuestos por una carga explosiva, un detonador y un sistema de 
+                 iniciación, pero pueden ser concebidos en combinación con químicos 
+                 tóxicos, toxinas biológicas, material radioactivo y/o elementos generadores 
+                 de metralla.
+             </li>
+         </ul>
+
+         <p>
+             8. Secuestro 
+         </p>
+         
+         <p>
+             De conformidad con el Derecho Internacional Humanitario, están prohibidas 
+             las privaciones arbitrarias de la libertad en el desarrollo de conflictos 
+             sin carácter internacional; sin embargo, la jurisprudencia de tribunales 
+             internacionales, los órganos consultivos del orden internacional, y la 
+             misma Corte Constitucional han establecido unos parámetros para saber 
+             cuándo se está frente a esta figura bajo contextos de conflicto armado 
+             interno y así determinar que con dicha situación se está cometiendo una 
+             infracción al Derecho Internacional Humanitario.
+         </p>
+
+         <p>
+             Tales parámetros deben confluir de manera simultánea y se exponen a 
+             continuación: i) se captura y se detiene a una persona ilícitamente; 
+             ii) se obliga, de forma explícita o implícita, a una tercera parte de 
+             hacer o a abstenerse de hacer algo, como condición para liberar al rehén, 
+             y para no atentar contra la vida o la integridad física de éste; 
+             iii) dichas conductas deben constituirse en un medio para alcanzar una 
+             determinada ventaja sobre la otra parte. 
+         </p>
+
+         <p>
+             9. Tortura
+         </p>
+
+         <p>
+             Todo acto por el cual se inflija intencionadamente a una persona dolores 
+             o sufrimientos graves, ya sean físicos o mentales, con el fin de obtener
+             de ella o de un tercero información o una confesión, de castigarla por un 
+             acto que haya cometido, o se sospeche que ha cometido, o de intimidar o 
+             coaccionar a esa persona o a otras, o por cualquier razón basada en cualquier 
+             tipo de discriminación, en el marco del conflicto o en situaciones que tengan 
+             una relación cercana y suficiente con él. 
+         </p>
+
+         <p>
+             10. Vinculación de niños, niñas y adolescentes a actividades relacionadas 
+             con grupos armados 
+         </p>
+
+         <p>
+             Consiste en el reclutamiento forzado e ilegal de menores de 18 años, 
+             quienes son obligados a integrar las filas de los grupos armados al margen 
+             del conflicto, ya sea de manera forzosa o con su “consentimiento”, el cual 
+             a su vez se encuentra viciado por diferentes factores socioeconómicos y 
+             culturales. En ese sentido, la Ley 1448 de 2011 reconoce la calidad de víctima 
+             a quienes hubieren sido desvinculados del grupo armado siendo menores de edad, 
+             tal como se encuentra consagrado en el parágrafo 2° del artículo tercero de 
+             la Ley. 
+         </p>
+
+         <p>
+            11. Abandono y/o despojo forzado de bienes muebles 
+         </p>
+
+         <p>
+             Para los efectos de la Ley 1448 de 2011, se entiende por despojo forzado 
+             de bienes muebles, la acción por medio de la cual, aprovechándose de la 
+             situación de violencia, una persona es privada arbitrariamente de la propiedad 
+             de sus bienes. Por su parte, se entiende por abandono forzado de bienes 
+             muebles, la acción por medio de la cual una persona es abocada a dejar 
+             sus bienes, en el marco del conflicto armado interno o como consecuencia de 
+             hechos que guardan relación cercana y suficiente con el mismo. Lo anterior, 
+             atendiendo a los Principios Rectores de los Desplazamientos Internos 
+             (Principios Deng), los cuales establecen la prohibición de privar 
+             arbitrariamente a cualquier persona de su propiedad, entendida como la que se 
+             ejerce sobre sus bienes muebles o inmuebles.  
+         </p>
+
+         <p>
+             12. Lesiones personales físicas/psicológicas 
+         </p>
+
+         <ul>
+             <li>
+                 Lesiones físicas: en términos medicolegales y para los efectos jurídicos 
+                 “una lesión es una alteración de la morfología y/o fisiología de órganos, 
+                 sistemas o segmentos corporales, producida por un agente traumático, 
+                 que trastorna la salud y causa desequilibrios de mayor o menor gravedad, 
+                 según el daño ocasionado”.
+             </li>
+             <li>
+                 Lesiones Psicológicas: se entienden como la afectación del desarrollo 
+                 de actividades esenciales y placenteras de la vida diaria. En este 
+                 sentido, es importante tener en cuenta que el daño aludido no consiste 
+                 en la lesión en sí misma, sino en las consecuencias que, debido a ella, 
+                 se producen en la vida de quien la sufre.
+             </li>
+         </ul>
+
+         <p>
+             13. Confinamiento
+         </p>
+
+         <p>
+             Es una situación de vulneración a derechos fundamentales, en la que las 
+             comunidades, pese a permanecer en una parte de su territorio, pierden la 
+             movilidad, como consecuencia de la presencia y accionar de grupos armados. 
+             Esta restricción implica la imposibilidad de acceder a bienes indispensables 
+             para la supervivencia derivada del control militar, económico, político, 
+             cultural y social que ejercen los grupos armados ilegales en el marco del 
+             conflicto armado interno. 
+         </p>
+
+     </div>
+
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        EXCLUSIONES
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="contenidoRequerimientos">
+       
+         <p>
+             Este proceso da trámite a la actuación administrativa correspondiente, que tiene como propósito revocar la inscripción en el Registro Único de Victimas (RUV) de las personas que hayan ingresado de forma irregular o fraudulenta.   
+         </p>
+
+         <p>
+             Esto se realiza de conformidad con lo regulado en la Resolución N.° 00822 del 10 de abril de 2018, que derogó la Resolución N.° 00134 de 2017, en la cual, la Unidad para las Víctimas, atendiendo al contenido del artículo 24, numerales 6 y 9 y a los artículos 157, 198 y 199 de la Ley 1448 de 2011, dispuso la competencia para iniciar estas actuaciones administrativas en cabeza de la Dirección de Registro y Gestión de la Información, sin perjuicio de la facultad legal que recae en la Oficina Asesora Jurídica, a través del Grupo de Defensa Judicial, de denunciar ante la autoridad competente todas aquellas conductas con presunción de delito a fin de que se adelanten las investigaciones penales a que haya lugar; garantizando así la aplicación de la sostenibilidad fiscal como criterio orientador de las actuaciones administrativas, la protección del erario y la fidelidad de la información contenida en el Registro. 
+         </p>
+
+         <p>
+             El procedimiento de revocatoria de la inscripción en el RUV se encuentra establecido en la Resolución N.° 00822 de 2018, así como lo contemplado en el artículo 199 de la Ley 1448 de 2011 y el artículo 14 de la Ley 387 de 1997.  
+         </p>
+
+         <p>
+             Las causales por las cuales se puede dar inicio y que puede conllevar a tomar la decisión de excluir a una persona del RUV obedecen a:  
+         </p>
+
+         <ol type="I">
+             <li>
+                 Un ingreso irregular o fraudulento al RUV.
+             </li>
+             <li>
+                 No ostentar la calidad de víctima en el marco del artículo 3° de la Ley 1448 o el artículo 1° de la Ley 387 de 1997.
+             </li>
+             
+         </ol>
+
+         <p>
+             Ahora bien, el procedimiento de revocatoria se encuentra dividido en tres etapas: 
+         </p>
+
+         <ol>
+             <li>
+                 Etapa preliminar, donde se realizan diferentes gestiones entre las cuales se encuentra oficiar a entidades que hacen parte del Sistema Nacional de Atención y Reparación Integral a las Víctimas (SNARIV) y otras que no hacen parte del sistema, con el fin de indagar acerca de las presuntas irregularidades en las cuales se encuentra inmersa alguna inclusión que fue otorgada. De igual forma, se realiza comunicación con las víctimas. 
+             </li>
+             <li>
+                 Apertura de investigación y pruebas, etapa en la cual mediante un acto administrativo debidamente motivado en el cual se relacionan los antecedentes del caso, los hallazgos encontrados y todos los demás elementos se ponen en conocimiento a la persona que se está investigando que la declaración por la cual fue incluido en el Registro presenta alguna irregularidad que se está revisando.  
+                 Mediante este auto se da la oportunidad para que la persona inmersa en esta investigación pueda allegar todos los documentos que consideren necesarios para probar las afectaciones sufridas.
+             </li>
+             <li>
+                 Etapa final, que corresponde a tomar la decisión una vez agotado el periodo probatorio, en la cual se procede a revisar todo el material recolectado frente a las presuntas irregularidades, y con base en ello, se procede a decir si se revoca la inclusión otorgada o si se procede a archivar la investigación. En esta etapa se procede a expedir un acto administrativo mediante el cual queda soportada la decisión. 
+             </li>
+         </ol>
+
+     </div>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        INGRESO AL REGISTRO ÚNICO DE VÍCTIMAS (RUV) POR SENTENCIAS JUDICIALES 
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="contenidoRequerimientos">
+        
+         <p>
+             El ingreso al Registro Único de Víctimas (RUV) también se realiza a través de los fallos judiciales emitidos por jueces de las siguientes jurisdicciones: órdenes de la jurisdicción constitucional por vía de acción de tutela, ya sea primera o segunda instancia o en instancia de revisión por parte de la Corte Constitucional; sentencias del proceso de Justicia y Paz; sentencias emitidas en el Sistema Interamericano de Derechos Humanos; sentencias del proceso de Restitución de Tierras; y sentencias emitidas en la jurisdicción Contencioso Administrativo. 
+         </p>
+
+         <p>
+             Este proceso se realiza de manera directa, previa revisión de la providencia judicial y la identificación de las víctimas relacionadas en la misma. Los casos que ingresan por esta vía al Registro se les asigna un consecutivo alfanumérico del número de Formato Único de Declaración (FUD), con un prefijo particular que permite su identificación dentro de los sistemas informáticos que soportan la operación del RUV.  
+         </p>
+
+     </div>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+        CARACTERIZACIÓN
+    </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="contenidoRequerimientos">
+        <p>De acuerdo las funciones establecidas en la ley para la Unidad para las Víctimas, esta ha desarrollado una estrategia que permite articular la oferta pública de políticas nacionales, departamentales, distritales y municipales, en materia de ayuda humanitaria, atención, asistencia y reparación integral. En este sentido, la Entidad brinda insumos para caracterizar y focalizar a las víctimas, teniendo en cuenta sus particularidades; para ello se diseñó la <em>Estrategia Integral de Caracterización</em> desde un enfoque diferencial y de goce efectivo de derechos, usando estándares nacionales para la producción de información estadística.</p>
+        <p>Con esta estrategia se logra identificar las condiciones económicas, jurídicas, sociales y culturales de la población víctima para el diseño y formulación de oferta institucional ajustada a sus necesidades, y con el objetivo de examinar los avances en Subsistencia Mínima (SM), Superación de la Situación de Vulnerabilidad (SSV) e Indicadores de Goce Efectivo de Derechos (IGED). Para tal propósito, la Unidad para las Víctimas ha ido construyendo un andamiaje para la interoperabilidad de los sistemas que se complementa con una estrategia de caracterización de las víctimas<a><sup><sup>[1]</sup></sup></a>. La recopilación de la información para la medición de los derechos no solo sirve como insumo para las mediciones vigentes que se adelantan en la Unidad (SM, SSV e IGED), sino que se convierte en un insumo para el diseño, seguimiento y evaluación de la política pública de víctimas, la planeación territorial en términos de planes de desarrollo y planes de acción territorial y para la formulación del Plan Operativo de Sistemas de Información (POSI).</p>
+        <hr />
+        <p><a>[1]</a> Es pertinente aclarar que hay dos momentos en la caracterización. Primero, la caracterización demográfica que se hace al momento de diligenciar el Formato Único de Declaración (FUD) y que toma los datos básicos de la persona; y segundo la caracterización socioeconómica que se necesita para las mediciones de SM, SSV e IGED.</p>
+
+    </div>
+
+    </mat-expansion-panel>
+
 </div>
