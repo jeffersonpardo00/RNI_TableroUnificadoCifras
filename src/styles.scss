@@ -1,1 +1,745 @@
-/* You can add global styles to this file, and also import other style files */
+$GrisLetras: #4b4b4b;
+$GrisClaro: #BABABA;
+$Fondo:#E6Effd;
+$AzulNocturno: #004884;
+$AzulOscuro: #3266cc;
+$AzulMedio: #3772ff;
+
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+html, body { height: 100%; }
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    //font-size: 12pt;
+}
+
+
+.pagF
+{
+    background-color: $Fondo;
+    width: 100%;
+    @include media(lg)
+    {
+        width: 1023px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.fotoBackground
+{
+  
+    .foto
+    {
+        width: 100%;
+    }
+    
+    /* .elFuturo
+    {
+        position: absolute;
+        top:50px;
+        right:0;
+        z-index: 1;
+        width: 32%;
+        img
+        {
+        width: 100%;
+        }
+    }
+    */
+}
+
+
+.paginas
+{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.headerpag
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+
+    .elFuturo
+    {
+        width: 25%;
+        img
+        {
+            width: 100%;
+        }
+    }
+
+}
+
+.headerOsc
+{
+    background-color: $AzulMedio;
+    padding: 1em 3em;
+    div{
+        color: white;
+    }
+    .t1{
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1em;
+        
+        
+    }
+    .t2{
+        font-size: 1.5em;
+        line-height: 1em;
+        
+    }
+    .t3{
+        font-weight: bold;
+        line-height: 1em;
+        
+    }
+}
+@media (max-width: $breakpoint-sm) 
+        { 
+            .headerOsc .t1
+            {
+                font-size: 1em;
+            }
+            .headerOsc .t2
+            {
+                font-size: 1em;
+            }
+            .headerOsc .t3
+            {
+                font-size: 0.8em;
+            }
+        
+        }
+.logoCifrasWrap
+{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+    @include media(lg)
+    {
+        width: 13%;
+    }
+    @include media(md)
+    {
+        width: 13%;
+    }
+    @include media(sm)
+    {
+        width: 25%;
+    }
+}
+
+.cuerpoIndice
+{
+    padding-top: 4em;
+    padding-bottom: 2em;
+    .itemIndice{
+        font-weight: bold;
+        color:$GrisLetras;
+    }
+    .linkIndice
+    {
+        font-weight: bold;
+        color: white;
+        padding: 0.2em 1em;
+        margin: 0.1em 0;
+        background-color: $AzulOscuro;
+        min-width: 6em;
+        text-align: center;
+
+        transition: 0.5s;
+        background-size: 200% auto;background-size: 200% auto;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 25px;
+        background-image: linear-gradient(to right, #00a1ff 0%, #3266cc 51%, #00b8ff 100%);
+    }
+
+    .linkIndice:hover
+    {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-position: right center; 
+    }
+}
+
+.nombresIndice
+{
+    .nombresIndF{
+        padding-bottom: 0.6em;
+        color:$GrisLetras;
+
+        .nombresIndT1
+        {
+            font-size: 0.8em;
+            padding-bottom: 0.1em;
+            font-weight: bold;
+        }
+        .nombresIndT2{
+            font-size: 0.9em;
+            line-height: 1em;
+        }
+    }
+   
+}
+
+//---------------INTERNAS---------------
+
+.TitulosInternas{
+    .t1{
+        font-size: 2em;
+        font-weight: bold;
+
+        @include media(md)
+        {
+            font-size: 1.5em;
+        }
+
+        @include media(sm)
+        {
+            font-size: 1.5em;
+        }
+
+        @include media(xs)
+        {
+            font-size: 1.2em;
+        }
+    }
+
+    .t2{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $AzulOscuro;
+
+        a
+        {
+            color: $AzulOscuro;
+        }
+
+        @include media(md)
+        {
+            font-size: 1.2em;
+        }
+
+        @include media(sm)
+        {
+            font-size: 1.2em;
+        }
+
+        @include media(xs)
+        {
+            font-size: 1em;
+        }
+    }
+
+    .t3{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $GrisLetras;
+
+        @include media(md)
+        {
+            font-size: 1.2em;
+        }
+
+        @include media(sm)
+        {
+            font-size: 1.2em;
+        }
+
+        @include media(xs)
+        {
+            font-size: 1em;
+        }
+    }
+
+}
+
+.portadaF{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    background-color: $Fondo;
+    display: flex;
+    align-items: center;
+}
+
+#paginaIndice
+{
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cuadroInternas
+{
+    border: 0px solid $AzulOscuro;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    .Negrita
+    {
+       list-style-type: none;
+       padding-top: 0.3em;
+       font-weight: bold;
+       color: $GrisLetras;
+       
+    }
+    
+}
+
+.Negrita
+    {
+       list-style-type: none;
+       padding-top: 0.3em;
+       a
+       {
+        font-weight: bold;
+        color: $GrisLetras;
+        }
+        a:hover
+        {
+            color: $GrisLetras;
+            text-decoration: none;
+        }
+       
+    }
+
+    .link
+    {
+       list-style-type: none;
+       padding-top: 0.3em;
+       a
+       {
+        font-weight: bold;
+        color: $AzulOscuro;
+        }
+       
+    }
+
+.footerPag
+{
+    height: 5em;
+}
+
+.descipcionPool
+{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.linkPool
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    .linkItem
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding: 1em 1.5em;
+        background-color: #3266cc;
+        margin: 0.5em;
+        text-align: center;
+        font-size: 0.5rem;
+        height: 50px;
+        overflow: hidden;
+        color: white;
+        border-radius: 0.5em;
+        cursor: pointer;
+
+        /*transition: 0.5s;
+        background-size: 200% auto;background-size: 200% auto;
+        box-shadow: 0 0 20px #eee;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        
+    
+        background-image: linear-gradient( #497eff 0%, #3266cc 51%, #3266cc 100%);
+        background-size: 200% auto;*/
+    }
+    
+    .linkItem:hover
+    {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-position: right center; 
+        text-decoration: none;
+    }
+}
+
+.acordion
+{
+    .linkItem
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 1.5em;
+        background-color: #004884;
+        margin: 0.5em;
+        text-align: center;
+        overflow: hidden;
+        color: white;
+        font-weight: 500;
+        transition: 0.5s;
+        box-shadow: 0px 3px 7px 0px #eee;
+        border: 0px solid gray;
+        border-bottom-width: 1px;
+       
+    }
+
+    .linkItem:hover
+    {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-position: right center; 
+        text-decoration: none;
+    }
+
+    table 
+    {
+        tbody {
+
+            tr:first-child
+            {
+                background-color: #e6effd;
+                td{
+                    text-align: center;
+                    color: #004884;
+                }
+            }
+            td{
+                border: 1px solid #3266cc;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    img
+    {
+        width: auto;
+    }
+
+
+}
+
+
+
+.volver
+{
+    display: flex;
+    justify-content: flex-end;
+    
+
+    a {
+        padding: 0.5em 2.5em 0.5em 3em;
+        background: $AzulMedio; 
+        position: relative; 
+        display: block;
+        overflow: hidden;
+        color: white;
+        text-decoration: none;
+        background-image: linear-gradient( #497eff 0%, #3266cc 51%, #3266cc 100%);
+  }
+
+  a:hover{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 4em 0.5em 3em;
+    background: $AzulOscuro;
+  }
+
+
+    a:after { 
+        content: " "; 
+        display: block; 
+        width: 0; 
+        height: 0;
+        border-top: 30px solid $Fondo;           
+        border-bottom: 30px solid $Fondo;
+        border-right: 30px solid transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px; 
+        left: 0;
+        z-index: 2; 
+    }
+
+}
+
+.CerrarSesionWraper
+{
+    width: 20%;
+    position: relative;
+    height: 10%;
+    .CerrarSesion
+    {
+        
+        border-radius: 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: #A8353D;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        right: 1%;
+        top: 1%;
+        cursor: pointer;
+
+
+        img{
+            width: 1rem;
+        }
+
+        .cerrarSesionDesc
+        {
+            color: white;
+            font-size: 0.5rem;
+            font-weight: bold;
+            display: none;
+            text-decoration: none;
+        }
+    }
+
+    .CerrarSesion:hover
+    {
+        .cerrarSesionDesc{
+            display: block;
+            margin-right: 1rem;
+        }
+    }
+
+}
+
+link
+{
+    color:#3266cc !important;
+}
+
+.noLink
+{
+    color:#4b4b4b !important;
+}
+//---------------comienzo angular------------
+.menuTablero
+{
+    background-color: $AzulOscuro;
+    background-image: linear-gradient(to right, $AzulOscuro 0%, $AzulOscuro 51%, #00b8ff 100%);
+
+    .menuTableroContent
+    {
+        position: relative;
+        width: 100%;
+        @include media(lg)
+        {
+            width: 1023px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+//---------------indices internas-----------
+
+
+.iframeCanva
+{
+    @include aspect-ratio(1280,650); //1280,720
+
+}
+
+.mat-toolbar, 
+.mat-toolbar h1, 
+.mat-toolbar h2, 
+.mat-toolbar h3, 
+.mat-toolbar h4, 
+.mat-toolbar h5, 
+.mat-toolbar h6
+.mat-list-item,
+.mat-expansion-panel-header,
+.mat-h1, .mat-headline, .mat-typography h1 
+.mat-typography 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+}
+
+.reqFrec
+{
+    padding-top: 1rem;
+    color: $GrisLetras;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-left: 24px;
+    
+}
+
+.ExpanIndex{
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%) !important;
+}
+
+.mat-list-item-content,
+.mat-expansion-panel-body,
+.mat-expansion-panel-header
+{
+    color: $GrisLetras;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        font-weight: 400;
+      
+}
+
+.mat-list-item-content
+{
+    padding: 0 24px !important;
+}
+
+.TituloIndice
+{
+    background-color: #E6Effd;
+    font-weight: bold;
+    color: #32569c;
+    height: auto !important; 
+
+    background-image: linear-gradient(to right, #bdd7ff 0%, #E6Effd 51%, #fbfbfb 100%);
+    span 
+    {
+        font-size: 1.1rem;
+    }
+
+   
+}
+
+.contentFrecuentes
+{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include media(lg)
+    {
+        width: 1023px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mat-expansion-panel
+    {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.mat-expansion-panel-content
+{
+    padding-left: 1rem;
+}
+
+.contentTemas
+{
+    position: relative;
+    width: 96%;
+    margin-left: 2%;
+    height: 100%;
+    //overflow: hidden;
+
+    .cuadroTemas
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .tituloTemasN,
+    .tituloTemas
+    {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: $GrisLetras;
+    }
+
+    .tituloTemasN
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .cuatroTemas li
+    {
+        border: 0px solid $AzulNocturno;
+        border-left-width: 1px;
+        padding-left: 1rem;
+    }
+}
+
+.expandLinks
+{
+    a{
+        margin-bottom: 0.5rem;
+    }
+}
+
+.mat-expansion-panel
+{
+    .mat-list-item-content
+    {
+        padding: 0 0 !important;
+    }
+}

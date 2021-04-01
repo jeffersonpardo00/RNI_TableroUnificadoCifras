@@ -1,0 +1,67 @@
+<!--<mat-toolbar class="menuTablero">
+    <mat-toolbar-row >
+        <div class="row between-xs middle-xs header-row">
+            <nav>
+                <a mat-button routerLink="/home" routerLinkActive="active">
+                    Tablero Unificado de Cifras
+                </a>
+                <a mat-button routerLink="/drgi" routerLinkActive="active">DRGI</a>
+                <a mat-button routerLink="/contact" routerLinkActive="active">Contact</a>
+                
+            </nav>
+            
+            <div class="CerrarSesionWraper">
+                <a href="http://vivantopruebas.unidadvictimas.gov.co/Menu/Menu">
+                    <div class="CerrarSesion">
+                        <div class="cerrarSesionDesc">
+                            CERRAR SESION
+                        </div>
+                        <img src="assets/images/boton-de-encendido.svg" alt="">
+                    </div>
+                </a>
+            </div>
+              
+        </div>
+        
+    </mat-toolbar-row>
+</mat-toolbar>-->
+
+<nav class="navbar navbar-expand-md menuTablero">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="togglerIcon">
+          <img class="logoCifrasB" src="assets/images/list.svg" alt="logoCifrasB">
+        </span>
+      </button>
+      
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
+        <img class="logoCifrasB" src="assets/images/logoCifrasB.svg" alt="logoCifrasB">
+        Tablero Unificado de Cifras
+    </a>
+    
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/drgi" routerLinkActive="active">DRGI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/sss" routerLinkActive="active">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/sdas" routerLinkActive="active">Link</a>
+        </li>    
+      </ul>
+    </div>  
+
+    <div class="CerrarSesionWraper">
+        <a class="navbar-brand" href="http://vivantopruebas.unidadvictimas.gov.co">
+            <div class="CerrarSesion">
+                <div class="cerrarSesionDesc">
+                    CERRAR SESION
+                </div>
+                <img src="assets/images/boton-de-encendido.svg" alt="">
+            </div>
+        </a>
+    </div>
+
+  </nav>

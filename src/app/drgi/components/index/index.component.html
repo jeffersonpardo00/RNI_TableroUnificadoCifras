@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" 
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+   
+      <div class="reqFrec">
+        <!--<a mat-list-item routerLink="/drgi">Requerimientos<br/> frecuentes</a>-->
+        <strong>
+          DIRECCIÓN DE <br/>
+          REGISTRO Y GESTIÓN<br/>
+          DE LA INFORMACIÓN
+        </strong>
+        
+      </div>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/drgi/requerimientos_frecuentes" routerLinkActive="active-list-item">Requerimientos Frecuentes</a>
+      <a mat-list-item routerLink="/drgi/victimas_incluidas" routerLinkActive="active-list-item">Víctimas Incluidas</a>
+      <a mat-list-item routerLink="/drgi/individual"  routerLinkActive="active-list-item">Individual</a>
+      <a mat-list-item routerLink="/drgi/eventos_masivos"  routerLinkActive="active-list-item">Eventos Tipo Masivo</a>
+      <a mat-list-item routerLink="/drgi/colectivos"  routerLinkActive="active-list-item">Colectivos</a>
+      <a mat-list-item routerLink="/drgi/exclusiones"  routerLinkActive="active-list-item">Exclusiones</a>
+      <a mat-list-item routerLink="/drgi/novedades"  routerLinkActive="active-list-item">Novedades</a>
+        
+      <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <a mat-list-item routerLink="/drgi/via_administrativa" routerLinkActive="active-list-item">Via Administrativa</a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="expandLinks">
+          <a mat-list-item routerLink="/drgi/recursos_tramitados" routerLinkActive="active-list-item">Número de recursos tramitados</a>
+          <a mat-list-item routerLink="/drgi/revocatoria_autos" routerLinkActive="active-list-item">Número revocatorias a autos</a>
+        </div>
+        
+      </mat-expansion-panel>
+
+      
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="TituloIndice">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!--<span>
+        DIRECCIÓN DE 
+        REGISTRO Y GESTIÓN
+        DE LA INFORMACIÓN
+      </span>-->
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet>
+    </router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

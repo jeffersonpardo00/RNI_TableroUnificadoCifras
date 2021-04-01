@@ -1,0 +1,31 @@
+<div class="contentTemas">
+    <div class="cuadroTemas">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <div class="tituloTemas">
+                    {{title}}
+                </div>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+            <div>
+                <ul class="cuatroTemas">
+                    <li class="Negrita">NÚMERO DE SUJETOS COLECTIVOS INCLUIDOS</li>
+                            <li class="Negrita">SUJETOS INCLUIDOS DESAGREGADOS POR ETNICOS / NO ÉTINCOS</li>
+                            <li class="Negrita">SUJETOS INCLUIDOS POR UBICACIÓN</li>
+                            <li class="Negrita">SUJETOS COLECTIVOS NOTIFICADOS POR DEPARTAMENTO DE UBICACIÓN</li>
+</ul>
+            </div>
+        </mat-expansion-panel>
+    </div>
+    
+    <div class="iframeCanva">
+        <div class="content">
+            <iframe width="100%" height="90%" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiZWExZThkNDUtNmU1My00MTE1LWIzYjAtY2E5NzA2MTJiMDk3IiwidCI6IjU5NjRkOWYyLWFlYjYtNDhkOS1hNTNkLTdhYjVjYjFkMDdlOCIsImMiOjR9" 
+            frameborder="0"></iframe>
+        </div>
+    </div>
+
+</div>
