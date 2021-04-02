@@ -21,6 +21,10 @@ const routes: Routes = [
         {
           path: 'drgi',
           loadChildren: () => import ('./drgi/drgi.module').then (m => m.DRGIModule)
+        },
+        {
+          path: 'dr',
+          loadChildren: () => import ('./dr/dr.module').then (m => m.DrModule)
         }
       ]
 
