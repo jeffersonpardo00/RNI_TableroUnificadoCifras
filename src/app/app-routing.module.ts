@@ -25,6 +25,10 @@ const routes: Routes = [
         {
           path: 'dr',
           loadChildren: () => import ('./dr/dr.module').then (m => m.DrModule)
+        },
+        {
+          path: 'dgsh',
+          loadChildren: () => import ('./dgsh/dgsh.module').then(m => m.DGSHModule)
         }
       ]
 

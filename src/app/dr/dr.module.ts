@@ -16,7 +16,16 @@ import { EsquEspecAcompComponent } from './components/esqu-espec-acomp/esqu-espe
 
 
 @NgModule({
-  declarations: [IndexComponent, RequerimientosFrecuentesComponent, ReparacionIndividualComponent, FondoReparacionComponent, ReparacionColectivaComponent, MedidasSatisRehabComponent, MedidasSatisfaccionComponent, RetornosReubicacionesComponent, EsquEspecAcompComponent],
+  declarations: [
+    IndexComponent,
+    RequerimientosFrecuentesComponent,
+    ReparacionIndividualComponent,
+    FondoReparacionComponent,
+    ReparacionColectivaComponent,
+    MedidasSatisRehabComponent,
+    MedidasSatisfaccionComponent,
+    RetornosReubicacionesComponent,
+    EsquEspecAcompComponent],
   imports: [
     CommonModule,
     DrRoutingModule,

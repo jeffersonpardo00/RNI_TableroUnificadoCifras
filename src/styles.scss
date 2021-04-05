@@ -597,6 +597,33 @@ link
     }
 }
 
+.sidenav-container {
+    height: 93%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .titulo_sidenav
+  {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 1.5rem;
+      font-weight: bold;
+
+  }
+
 //---------------indices internas-----------
 
 
