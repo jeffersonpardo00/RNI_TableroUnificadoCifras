@@ -726,11 +726,20 @@ link
         padding-bottom: 1rem;
     }
 
-    .cuatroTemas li
+    .cuatroTemas 
     {
-        border: 0px solid $AzulNocturno;
-        border-left-width: 1px;
-        padding-left: 1rem;
+        /*
+        ul{
+            list-style-type: none;
+        }
+        
+        li
+        {
+            border: 0px solid $AzulNocturno;
+            border-left-width: 1px;
+            padding-left: 1rem;
+            
+        }*/
     }
 }
 
