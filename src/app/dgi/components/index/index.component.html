@@ -1,0 +1,71 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" 
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+     
+        <div class="reqFrec">
+          <strong>
+            DIRECCIÓN  <br/>
+            DE GESTIÓN<br/>
+            INTERINSTITUCIONAL
+          </strong>
+          
+        </div>
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dgi/requerimientos_frecuentes" routerLinkActive="active-list-item">Requerimientos Frecuentes</a>
+        
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <a mat-list-item routerLink="/dgi/gestion_interinstitucional" routerLinkActive="active-list-item">Gestión Interinstitucional</a>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expandLinks">
+            <a mat-list-item routerLink="/dgi/victimas_superaron_sv" routerLinkActive="active-list-item">Víctimas que han superado SV</a>
+            <a mat-list-item routerLink="/dgi/sol_acceso_oferta" routerLinkActive="active-list-item">Solicitudes Acceso a Oferta</a>
+            <a mat-list-item routerLink="/dgi/balance_acceso_efectivo" routerLinkActive="active-list-item">Balance Acceso Efectivo</a>
+            
+          </div>
+          
+        </mat-expansion-panel>
+        <a mat-list-item routerLink="/dgi/snariv" routerLinkActive="active-list-item">SNARIV</a>
+        <a mat-list-item routerLink="/dgi/grupo_gestion_proyectos" routerLinkActive="active-list-item">Grupo de Gestión de Proyectos</a>
+
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+        <a mat-list-item routerLink="/dgi/coor_nacion_territorio" routerLinkActive="active-list-item">Coordinación Nacion - Territorio</a>
+        </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="expandLinks">
+          <a mat-list-item routerLink="/dgi/entidades_territoriales" routerLinkActive="active-list-item">Entidades Territoriales Certificadas</a>
+          <a mat-list-item routerLink="/dgi/centros_regionales" routerLinkActive="active-list-item">Centros Regionales</a>
+          
+        </div>
+
+        </mat-expansion-panel>
+        
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="TituloIndice">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+       
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <router-outlet>
+      </router-outlet>
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
