@@ -783,3 +783,17 @@ link
         max-width: 600px;
     }
 }
+
+.itemRequerimientos
+{
+ padding-top: 0;   
+    .textosRequerimientos
+    {
+        border: 0px solid gray;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: 500;
+    }
+}
