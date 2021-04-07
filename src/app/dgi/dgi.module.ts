@@ -15,10 +15,11 @@ import { CoorNacionTerritorioComponent } from './components/coor-nacion-territor
 import { EntidadesTerritorialesComponent } from './components/entidades-territoriales/entidades-territoriales.component';
 import { CentrosRegionalesComponent } from './components/centros-regionales/centros-regionales.component';
 import { ParticipacionComponent } from './components/participacion/participacion.component';
+import { InfoProyOfertadosComponent } from './components/info-proy-ofertados/info-proy-ofertados.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, RequerimientosFrecuentesComponent, GestionInterinstitucionalComponent, VictimasSuperaronSVComponent, SolAccesoOfertaComponent, BalanceAccesoEfectivoComponent, SnarivComponent, GrupoGestionProyectosComponent, CoorNacionTerritorioComponent, EntidadesTerritorialesComponent, CentrosRegionalesComponent, ParticipacionComponent],
+  declarations: [IndexComponent, RequerimientosFrecuentesComponent, GestionInterinstitucionalComponent, VictimasSuperaronSVComponent, SolAccesoOfertaComponent, BalanceAccesoEfectivoComponent, SnarivComponent, GrupoGestionProyectosComponent, CoorNacionTerritorioComponent, EntidadesTerritorialesComponent, CentrosRegionalesComponent, ParticipacionComponent, InfoProyOfertadosComponent],
   imports: [
     CommonModule,
     DGIRoutingModule,

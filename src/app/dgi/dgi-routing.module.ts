@@ -13,6 +13,7 @@ import { CoorNacionTerritorioComponent } from './components/coor-nacion-territor
 import { EntidadesTerritorialesComponent } from './components/entidades-territoriales/entidades-territoriales.component';
 import { CentrosRegionalesComponent } from './components/centros-regionales/centros-regionales.component';
 import { ParticipacionComponent } from './components/participacion/participacion.component';
+import { InfoProyOfertadosComponent } from './components/info-proy-ofertados/info-proy-ofertados.component';
 
 const routes: Routes = [
 
@@ -67,6 +68,10 @@ const routes: Routes = [
       {
         path: 'participacion',
         component: ParticipacionComponent
+      },
+      {
+        path: 'info_proyectos_ofertados',
+        component: InfoProyOfertadosComponent
       }
     ]
   }

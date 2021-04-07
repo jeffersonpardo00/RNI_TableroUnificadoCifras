@@ -13,7 +13,6 @@
           
         </div>
       <mat-nav-list>
-        <a mat-list-item routerLink="/dgi/requerimientos_frecuentes" routerLinkActive="active-list-item">Requerimientos Frecuentes</a>
         
         <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
                          (closed)="panelOpenState = false">
@@ -28,10 +27,21 @@
             <a mat-list-item routerLink="/dgi/balance_acceso_efectivo" routerLinkActive="active-list-item">Balance Acceso Efectivo</a>
             
           </div>
-          
         </mat-expansion-panel>
         <a mat-list-item routerLink="/dgi/snariv" routerLinkActive="active-list-item">SNARIV</a>
-        <a mat-list-item routerLink="/dgi/grupo_gestion_proyectos" routerLinkActive="active-list-item">Grupo de Gestión de Proyectos</a>
+        
+
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+          <a mat-list-item routerLink="/dgi/grupo_gestion_proyectos" routerLinkActive="active-list-item">Grupo de Gestión de Proyectos</a>
+        </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="expandLinks">
+        <a mat-list-item routerLink="/dgi/info_proyectos_ofertados" routerLinkActive="active-list-item">Proyectos Ofertados</a>
+        </div>
+        </mat-expansion-panel>
 
         <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
         (closed)="panelOpenState = false">
@@ -47,6 +57,13 @@
         </mat-expansion-panel>
         <a mat-list-item routerLink="/dgi/participacion" routerLinkActive="active-list-item">Participación</a>
         
+        <a class="itemRequerimientos" mat-list-item
+        routerLink="/dgi/requerimientos_frecuentes" routerLinkActive="active-list-item">
+         <div class="textosRequerimientos">
+           Requerimientos Frecuentes
+         </div>
+       </a>
+
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
