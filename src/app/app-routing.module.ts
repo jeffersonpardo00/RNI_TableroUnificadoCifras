@@ -33,9 +33,16 @@ const routes: Routes = [
         {
           path: 'dgi',
           loadChildren: () => import ('./dgi/dgi.module').then(m => m.DGIModule)
+        },
+        {
+          path: 'dae',
+          loadChildren: () => import ('./dae/dae.module').then(m => m.DaeModule)
+        },
+        {
+          path: 'generales_inversion',
+          loadChildren: () => import ('./generales-inversion/generales-inversion.module').then(m => m.GeneralesInversionModule)
         }
       ]
-
   }
 
 ];
