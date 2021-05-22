@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndividualComponent implements OnInit {
 
-  title = 'VÍCTIMAS INCLUIDAS';
+  title = 'INDIVIDUAL';
   panelOpenState = false;
 
   constructor() { }

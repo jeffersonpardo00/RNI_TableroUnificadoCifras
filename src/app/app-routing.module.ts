@@ -21,9 +21,28 @@ const routes: Routes = [
         {
           path: 'drgi',
           loadChildren: () => import ('./drgi/drgi.module').then (m => m.DRGIModule)
+        },
+        {
+          path: 'dr',
+          loadChildren: () => import ('./dr/dr.module').then (m => m.DrModule)
+        },
+        {
+          path: 'dgsh',
+          loadChildren: () => import ('./dgsh/dgsh.module').then(m => m.DGSHModule)
+        },
+        {
+          path: 'dgi',
+          loadChildren: () => import ('./dgi/dgi.module').then(m => m.DGIModule)
+        },
+        {
+          path: 'dae',
+          loadChildren: () => import ('./dae/dae.module').then(m => m.DaeModule)
+        },
+        {
+          path: 'generales_inversion',
+          loadChildren: () => import ('./generales-inversion/generales-inversion.module').then(m => m.GeneralesInversionModule)
         }
       ]
-
   }
 
 ];

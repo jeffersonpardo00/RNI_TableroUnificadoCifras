@@ -1,0 +1,84 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" 
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+     
+        <div class="reqFrec">
+          <strong>
+            DIRECCIÓN DE <br/>
+            REPARACIÓN
+          </strong>
+          
+        </div>
+      <mat-nav-list>
+        
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <a mat-list-item routerLink="/dr/reparacion_individual" routerLinkActive="active-list-item">Reparación Individual</a>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expandLinks">
+            <a mat-list-item routerLink="/dr/fondo_reparacion" routerLinkActive="active-list-item">Fondo de reparación</a>
+          </div>
+          
+        </mat-expansion-panel>
+  
+        <a mat-list-item routerLink="/dr/reparacion_colectiva"  routerLinkActive="active-list-item">Reparación Colectiva</a>
+        
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <a mat-list-item routerLink="/dr/medidas_satis_rehab" routerLinkActive="active-list-item">Medidas de Satisfacción y Rehabilitación</a>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expandLinks">
+            <a mat-list-item routerLink="/dr/medidas_satisfaccion" routerLinkActive="active-list-item">Medidas de Satisfacción</a>
+          </div>
+          
+        </mat-expansion-panel>
+
+        <!--<mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <a mat-list-item routerLink="/dr/retornos_reubicaciones" routerLinkActive="active-list-item">Retornos y Reubicaciones</a>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="expandLinks">
+            <a mat-list-item routerLink="/dr/esqu_espec_acomp" routerLinkActive="active-list-item">Esquemas especiales de acompañamiento</a>
+          </div>
+          
+        </mat-expansion-panel>-->
+        <a mat-list-item routerLink="/dr/retornos_reubicaciones" routerLinkActive="active-list-item">Retornos y Reubicaciones</a>
+        <a class="itemRequerimientos" mat-list-item
+         routerLink="/dr/requerimientos_frecuentes" routerLinkActive="active-list-item">
+          <div class="textosRequerimientos">
+            Requerimientos Frecuentes
+          </div>
+        </a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="TituloIndice">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+       
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <router-outlet>
+      </router-outlet>
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

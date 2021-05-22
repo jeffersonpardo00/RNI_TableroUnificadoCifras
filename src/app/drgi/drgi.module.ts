@@ -18,7 +18,18 @@ import { ExclusionesComponent } from './components/exclusiones/exclusiones.compo
 import { NovedadesComponent } from './components/novedades/novedades.component';
 
 @NgModule({
-  declarations: [IndexComponent, VictimasIncluidasComponent, RequerimientosFrecuentesComponent, IndividualComponent, ViaAdministrativaComponent, RecursosTramitadosComponent, RevocatoriaAutosComponent, EventosMasivosComponent, ColectivosComponent, ExclusionesComponent, NovedadesComponent],
+  declarations: [
+    IndexComponent,
+    VictimasIncluidasComponent,
+    RequerimientosFrecuentesComponent,
+    IndividualComponent,
+    ViaAdministrativaComponent,
+    RecursosTramitadosComponent,
+    RevocatoriaAutosComponent,
+    EventosMasivosComponent,
+    ColectivosComponent,
+    ExclusionesComponent,
+    NovedadesComponent],
   imports: [
     CommonModule,
     DRGIRoutingModule,
