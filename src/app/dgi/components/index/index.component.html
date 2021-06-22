@@ -40,6 +40,7 @@
         </mat-expansion-panel-header>
         <div class="expandLinks">
         <a mat-list-item routerLink="/dgi/info_proyectos_ofertados" routerLinkActive="active-list-item">Proyectos Ofertados</a>
+        <a mat-list-item routerLink="/dgi/ocad_paz" routerLinkActive="active-list-item">OCAD paz</a>
         </div>
         </mat-expansion-panel>
 
@@ -53,9 +54,23 @@
         <div class="expandLinks">
           <a mat-list-item routerLink="/dgi/entidades_territoriales" routerLinkActive="active-list-item">Entidades Territoriales Certificadas</a>
           <a mat-list-item routerLink="/dgi/centros_regionales" routerLinkActive="active-list-item">Centros Regionales</a>
+          <a mat-list-item routerLink="/dgi/jornadas_fortalecimiento" routerLinkActive="active-list-item">Jornadas Fortalecimiento</a>
         </div>
         </mat-expansion-panel>
-        <a mat-list-item routerLink="/dgi/participacion" routerLinkActive="active-list-item">Participación</a>
+
+        <mat-expansion-panel class='ExpanIndex' (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+          <a mat-list-item routerLink="/dgi/participacion" routerLinkActive="active-list-item">Participación</a>
+        </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="expandLinks">
+          <a mat-list-item routerLink="/dgi/fortalecimiento" routerLinkActive="active-list-item">Fortalecimiento</a>
+        </div>
+        </mat-expansion-panel>
+
+        
         
         <a class="itemRequerimientos" mat-list-item
         routerLink="/dgi/requerimientos_frecuentes" routerLinkActive="active-list-item">

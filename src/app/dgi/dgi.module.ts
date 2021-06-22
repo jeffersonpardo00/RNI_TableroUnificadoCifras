@@ -16,10 +16,30 @@ import { EntidadesTerritorialesComponent } from './components/entidades-territor
 import { CentrosRegionalesComponent } from './components/centros-regionales/centros-regionales.component';
 import { ParticipacionComponent } from './components/participacion/participacion.component';
 import { InfoProyOfertadosComponent } from './components/info-proy-ofertados/info-proy-ofertados.component';
+import { OcadPazComponent } from './components/ocad-paz/ocad-paz.component';
+import { JornadasFortalecimientoComponent } from './components/jornadas-fortalecimiento/jornadas-fortalecimiento.component';
+import { FortalecimientoComponent } from './components/fortalecimiento/fortalecimiento.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, RequerimientosFrecuentesComponent, GestionInterinstitucionalComponent, VictimasSuperaronSVComponent, SolAccesoOfertaComponent, BalanceAccesoEfectivoComponent, SnarivComponent, GrupoGestionProyectosComponent, CoorNacionTerritorioComponent, EntidadesTerritorialesComponent, CentrosRegionalesComponent, ParticipacionComponent, InfoProyOfertadosComponent],
+  declarations: [
+    IndexComponent,
+    RequerimientosFrecuentesComponent,
+    GestionInterinstitucionalComponent,
+    VictimasSuperaronSVComponent,
+    SolAccesoOfertaComponent,
+    BalanceAccesoEfectivoComponent,
+    SnarivComponent,
+    GrupoGestionProyectosComponent,
+    CoorNacionTerritorioComponent,
+    EntidadesTerritorialesComponent,
+    CentrosRegionalesComponent,
+    ParticipacionComponent,
+    InfoProyOfertadosComponent,
+    OcadPazComponent,
+    JornadasFortalecimientoComponent,
+    FortalecimientoComponent
+  ],
   imports: [
     CommonModule,
     DGIRoutingModule,

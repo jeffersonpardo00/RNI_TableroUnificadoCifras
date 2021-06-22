@@ -13,10 +13,11 @@ import { AyudaHumanitariaComponent } from './components/ayuda-humanitaria/ayuda-
 import { ServicioCiudadanoComponent } from './components/servicio-ciudadano/servicio-ciudadano.component';
 import { AsistenciaHumanitariaComponent } from './components/asistencia-humanitaria/asistencia-humanitaria.component';
 import { GeneralComponent } from './components/general/general.component';
+import { EntTerrApoyadasComponent } from './components/ent-terr-apoyadas/ent-terr-apoyadas.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, RequerimientosFrecuentesComponent, PrevencionComponent, AsistenciasTecnicasComponent, SesionesSeguimientoComponent, AtencionInmediatezComponent, AyudaHumanitariaComponent, ServicioCiudadanoComponent, AsistenciaHumanitariaComponent, GeneralComponent],
+  declarations: [IndexComponent, RequerimientosFrecuentesComponent, PrevencionComponent, AsistenciasTecnicasComponent, SesionesSeguimientoComponent, AtencionInmediatezComponent, AyudaHumanitariaComponent, ServicioCiudadanoComponent, AsistenciaHumanitariaComponent, GeneralComponent, EntTerrApoyadasComponent],
   imports: [
     CommonModule,
     DGSHRoutingModule,

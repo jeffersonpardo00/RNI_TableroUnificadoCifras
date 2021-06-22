@@ -1,7 +1,7 @@
 
 <div class="contentTemas">
     <div class="cuadroTemas">
-
+<!--
         <mat-card>
             <mat-card-title>{{title}}</mat-card-title>
             <mat-card-content>
@@ -40,13 +40,16 @@
                 </div>
             </mat-card-content>
         </mat-card>
-
-     <!--   <mat-expansion-panel (opened)="panelOpenState = true"
+-->
+      <mat-expansion-panel (opened)="panelOpenState = true"
         (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div class="tituloTemas">
-                    {{title}}
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiY2FlNmVmMmMtN2ZkNi00N2E2LWE1MjktYTJkMzFiOTIwOGIxIiwidCI6IjU5NjRkOWYyLWFlYjYtNDhkOS1hNTNkLTdhYjVjYjFkMDdlOCIsImMiOjR9"
+                    target="_blank" rel="noopener noreferrer">
+                        {{title}}
+                    </a>
                 </div>
             </mat-panel-title>
         </mat-expansion-panel-header>
@@ -95,9 +98,9 @@
     <div class="iframeCanva">
         <div class="content">
             <iframe width="100%" height="90%" 
-            src="" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiY2FlNmVmMmMtN2ZkNi00N2E2LWE1MjktYTJkMzFiOTIwOGIxIiwidCI6IjU5NjRkOWYyLWFlYjYtNDhkOS1hNTNkLTdhYjVjYjFkMDdlOCIsImMiOjR9" 
             frameborder="0"></iframe>
         </div>
     </div>
-    -->
+
 </div>
