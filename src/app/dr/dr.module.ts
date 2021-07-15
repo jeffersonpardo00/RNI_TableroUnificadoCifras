@@ -13,6 +13,7 @@ import { MedidasSatisRehabComponent } from './components/medidas-satis-rehab/med
 import { MedidasSatisfaccionComponent } from './components/medidas-satisfaccion/medidas-satisfaccion.component';
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 import { EsquEspecAcompComponent } from './components/esqu-espec-acomp/esqu-espec-acomp.component';
+import { EsqEspAcomFamComponent } from './components/esq-esp-acom-fam/esq-esp-acom-fam.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { EsquEspecAcompComponent } from './components/esqu-espec-acomp/esqu-espe
     MedidasSatisRehabComponent,
     MedidasSatisfaccionComponent,
     RetornosReubicacionesComponent,
-    EsquEspecAcompComponent],
+    EsquEspecAcompComponent,
+    EsqEspAcomFamComponent],
   imports: [
     CommonModule,
     DrRoutingModule,

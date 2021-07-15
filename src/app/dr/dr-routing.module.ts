@@ -10,6 +10,7 @@ import { MedidasSatisRehabComponent } from './components/medidas-satis-rehab/med
 import { MedidasSatisfaccionComponent } from './components/medidas-satisfaccion/medidas-satisfaccion.component';
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 import { EsquEspecAcompComponent } from './components/esqu-espec-acomp/esqu-espec-acomp.component' ;
+import { EsqEspAcomFamComponent } from './components/esq-esp-acom-fam/esq-esp-acom-fam.component';
 
 const routes: Routes = [
 
@@ -52,6 +53,10 @@ const routes: Routes = [
       {
         path: 'esqu_espec_acomp',
         component: EsquEspecAcompComponent
+      },
+      {
+        path: 'esqu_espec_acomp_fam',
+        component: EsqEspAcomFamComponent
       }
     ]
   }

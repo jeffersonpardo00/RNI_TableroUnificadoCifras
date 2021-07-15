@@ -5,6 +5,7 @@ import { IndexComponent } from './components/index/index.component';
 import { RequerimientosFrecuentesComponent } from './components/requerimientos-frecuentes/requerimientos-frecuentes.component';
 import { GeneralComponent } from './components/general/general.component';
 import { PlanesCnarpComponent } from './components/planes-cnarp/planes-cnarp.component';
+import { MenuDaeComponent } from './components/menu-dae/menu-dae.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'planes_cnarp',
         component: PlanesCnarpComponent
+      },
+      {
+        path: 'menu_dae',
+        component: MenuDaeComponent
       }
     ]
   }
