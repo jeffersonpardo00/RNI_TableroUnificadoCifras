@@ -41,6 +41,10 @@ const routes: Routes = [
         {
           path: 'generales_inversion',
           loadChildren: () => import ('./generales-inversion/generales-inversion.module').then(m => m.GeneralesInversionModule)
+        },
+        {
+          path: 'observatorio',
+          loadChildren: () => import ('./observatorio/observatorio.module').then(m => m.ObservatorioModule)
         }
       ]
   }
