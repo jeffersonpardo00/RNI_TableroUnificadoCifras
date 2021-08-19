@@ -8,6 +8,13 @@ import { RequerimientosFrecuentesComponent } from './components/requerimientos-f
 import { GeneralComponent } from './components/general/general.component';
 import { PlanesCnarpComponent } from './components/planes-cnarp/planes-cnarp.component';
 import { MenuDaeComponent } from './components/menu-dae/menu-dae.component';
+import { EsqEspAcomComComponent } from './components/esq-esp-acom-com/esq-esp-acom-com.component';
+import { PlanRetornoComponent } from './components/plan-retorno/plan-retorno.component';
+import { SujetosColectivosComponent } from './components/sujetos-colectivos/sujetos-colectivos.component';
+import { ReporteAcompanadosComponent } from './components/reporte-acompanados/reporte-acompanados.component';
+import { SujetosEtnicosRegistroComponent } from './components/sujetos-etnicos-registro/sujetos-etnicos-registro.component';
+import { ReparacionColectivaComponent } from './components/reparacion-colectiva/reparacion-colectiva.component';
+import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 
 
 @NgModule({
@@ -16,7 +23,14 @@ import { MenuDaeComponent } from './components/menu-dae/menu-dae.component';
     RequerimientosFrecuentesComponent,
     GeneralComponent,
     PlanesCnarpComponent,
-    MenuDaeComponent],
+    MenuDaeComponent,
+    EsqEspAcomComComponent,
+    PlanRetornoComponent,
+    SujetosColectivosComponent,
+    ReporteAcompanadosComponent,
+    SujetosEtnicosRegistroComponent,
+    ReparacionColectivaComponent,
+    RetornosReubicacionesComponent],
   imports: [
     CommonModule,
     DaeRoutingModule,

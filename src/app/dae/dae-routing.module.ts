@@ -6,6 +6,13 @@ import { RequerimientosFrecuentesComponent } from './components/requerimientos-f
 import { GeneralComponent } from './components/general/general.component';
 import { PlanesCnarpComponent } from './components/planes-cnarp/planes-cnarp.component';
 import { MenuDaeComponent } from './components/menu-dae/menu-dae.component';
+import { EsqEspAcomComComponent } from './components/esq-esp-acom-com/esq-esp-acom-com.component';
+import { PlanRetornoComponent } from './components/plan-retorno/plan-retorno.component';
+import { SujetosColectivosComponent } from './components/sujetos-colectivos/sujetos-colectivos.component';
+import { ReporteAcompanadosComponent } from './components/reporte-acompanados/reporte-acompanados.component';
+import { SujetosEtnicosRegistroComponent } from './components/sujetos-etnicos-registro/sujetos-etnicos-registro.component';
+import { ReparacionColectivaComponent } from './components/reparacion-colectiva/reparacion-colectiva.component';
+import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 
 const routes: Routes = [
   {
@@ -31,6 +38,34 @@ const routes: Routes = [
       {
         path: 'menu_dae',
         component: MenuDaeComponent
+      },
+      {
+        path: 'esq_esp_acom_com',
+        component: EsqEspAcomComComponent
+      },
+      {
+        path: 'plan_retorno',
+        component: PlanRetornoComponent
+      },
+      {
+        path: 'sujetos_colectivos',
+        component: SujetosColectivosComponent
+      },
+      {
+        path: 'reporte_acompanados',
+        component: ReporteAcompanadosComponent
+      },
+      {
+        path: 'sujetos_etnicos_registro',
+        component: SujetosEtnicosRegistroComponent
+      },
+      {
+        path: 'reparacion_colectiva',
+        component: ReparacionColectivaComponent
+      },
+      {
+        path: 'retornos_reubicaciones',
+        component: RetornosReubicacionesComponent
       }
     ]
   }

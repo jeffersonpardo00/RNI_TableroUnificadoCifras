@@ -45,6 +45,10 @@ const routes: Routes = [
         {
           path: 'observatorio',
           loadChildren: () => import ('./observatorio/observatorio.module').then(m => m.ObservatorioModule)
+        },
+        {
+          path: 'oaj',
+          loadChildren: () => import ('./oaj/oaj.module').then(m => m.OajModule)
         }
       ]
   }
