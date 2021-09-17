@@ -49,6 +49,14 @@ const routes: Routes = [
         {
           path: 'oaj',
           loadChildren: () => import ('./oaj/oaj.module').then(m => m.OajModule)
+        },
+        {
+          path: 'sg',
+          loadChildren: () => import ('./gave/gave.module').then(m => m.GaveModule)
+        },
+        {
+          path: 'rni',
+          loadChildren: () => import ('./rni/rni.module').then(m => m.RniModule)
         }
       ]
   }

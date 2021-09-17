@@ -1,0 +1,45 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" 
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+     
+        <div class="reqFrec">
+          <strong>
+            RED NACIONAL DE <br/>
+            INFORMACIÓN
+          </strong>
+        </div>
+      <mat-nav-list>
+        
+        <a mat-list-item routerLink="/rni/vis_mercado_laboral" routerLinkActive="active-list-item">Visor Mercado Laboral</a>
+        <a mat-list-item routerLink="/rni/visor_iged" routerLinkActive="active-list-item">Visor IGED</a>
+       
+        <!--<a class="itemRequerimientos" mat-list-item
+         routerLink="/oaj/requerimientos_frecuentes" routerLinkActive="active-list-item">
+          <div class="textosRequerimientos">
+            Requerimientos Frecuentes
+          </div>
+        </a>-->
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="TituloIndice">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+       
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <router-outlet>
+      </router-outlet>
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

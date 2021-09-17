@@ -13,6 +13,7 @@ import { ReporteAcompanadosComponent } from './components/reporte-acompanados/re
 import { SujetosEtnicosRegistroComponent } from './components/sujetos-etnicos-registro/sujetos-etnicos-registro.component';
 import { ReparacionColectivaComponent } from './components/reparacion-colectiva/reparacion-colectiva.component';
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
+import { SegMedidaIndemColectivaComponent } from './components/seg-medida-indem-colectiva/seg-medida-indem-colectiva.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,10 @@ const routes: Routes = [
       {
         path: 'retornos_reubicaciones',
         component: RetornosReubicacionesComponent
+      },
+      {
+        path: 'Seg_Medida_Indem_Colectiva',
+        component: SegMedidaIndemColectivaComponent
       }
     ]
   }

@@ -12,6 +12,7 @@ import { ServicioCiudadanoComponent } from './components/servicio-ciudadano/serv
 import { AsistenciaHumanitariaComponent } from './components/asistencia-humanitaria/asistencia-humanitaria.component';
 import { GeneralComponent } from './components/general/general.component';
 import { EntTerrApoyadasComponent } from './components/ent-terr-apoyadas/ent-terr-apoyadas.component';
+import { InformeVeeduriasComponent } from './components/informe-veedurias/informe-veedurias.component';
 
 const routes: Routes = [
 
@@ -62,6 +63,10 @@ const routes: Routes = [
       {
         path: 'entidades_terr_apoyadas',
         component: EntTerrApoyadasComponent
+      },
+      {
+        path: 'informe_veedurias',
+        component: InformeVeeduriasComponent
       }
     ]
   }

@@ -11,6 +11,10 @@ import { MedidasSatisfaccionComponent } from './components/medidas-satisfaccion/
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 import { EsquEspecAcompComponent } from './components/esqu-espec-acomp/esqu-espec-acomp.component' ;
 import { EsqEspAcomFamComponent } from './components/esq-esp-acom-fam/esq-esp-acom-fam.component';
+import { PlanesRetReubiEsqComponent } from './components/planes-ret-reubi-esq/planes-ret-reubi-esq.component';
+import { EsqEspAcompComunitarioComponent } from './components/esq-esp-acomp-comunitario/esq-esp-acomp-comunitario.component';
+import { EsqEspAcomHogaresComponent } from './components/esq-esp-acom-hogares/esq-esp-acom-hogares.component';
+import { AcompanadosComponent } from './components/acompanados/acompanados.component';
 
 const routes: Routes = [
 
@@ -57,6 +61,22 @@ const routes: Routes = [
       {
         path: 'esqu_espec_acomp_fam',
         component: EsqEspAcomFamComponent
+      },
+      {
+        path: 'planes_ret_reubi',
+        component: PlanesRetReubiEsqComponent
+      },
+      {
+        path: 'esq_esp_acomp_comunitario',
+        component: EsqEspAcompComunitarioComponent
+      },
+      {
+        path: 'esq_esp_acomp_hogares',
+        component: EsqEspAcomHogaresComponent
+      },
+      {
+        path: 'acompanados',
+        component: AcompanadosComponent
       }
     ]
   }
