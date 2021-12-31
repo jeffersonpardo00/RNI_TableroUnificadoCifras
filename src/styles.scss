@@ -857,3 +857,42 @@ link
     }
     
 }
+
+.constr-wrap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    //font-size: 100%;
+    font-size: 1rem;
+
+    @media (max-width: $breakpoint-sm) 
+    { 
+        font-size: 0.5rem;
+    }
+    
+    .constr_img
+    {
+        width: 80%;
+        max-width: 700px;
+    }
+    .constr-title
+    {
+        font-size: 3em;
+        color: #3772ff;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        font-weight: bold;
+    }
+    .constr-subtitle
+    {
+        font-size: 1.5em;
+        color: #3772ff;
+        text-align: center;
+        padding-bottom: 2em;
+        font-weight: bold;
+    }
+}

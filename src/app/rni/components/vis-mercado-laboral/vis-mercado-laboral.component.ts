@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisMercadoLaboralComponent implements OnInit {
 
-  title = 'DERECHOS DE PETICIÓN Y TUTELAS';
+  title = 'VISOR MERCADO LABORAL';
 
   constructor() { }
 

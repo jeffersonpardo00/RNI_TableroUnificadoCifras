@@ -12,6 +12,8 @@ import { EventosMasivosComponent } from './components/eventos-masivos/eventos-ma
 import { ColectivosComponent } from './components/colectivos/colectivos.component';
 import { ExclusionesComponent } from './components/exclusiones/exclusiones.component';
 import { NovedadesComponent } from './components/novedades/novedades.component';
+import { VisorMercadoLaboralComponent } from './components/visor-mercado-laboral/visor-mercado-laboral.component';
+import { VisorIgedComponent } from './components/visor-iged/visor-iged.component';
 
 const routes: Routes = [
 
@@ -62,6 +64,14 @@ const routes: Routes = [
       {
         path: 'novedades',
         component: NovedadesComponent
+      },
+      {
+        path: 'visor_mercado_laboral',
+        component: VisorMercadoLaboralComponent
+      },
+      {
+        path: 'visor_iged',
+        component: VisorIgedComponent
       }
     ]
   }

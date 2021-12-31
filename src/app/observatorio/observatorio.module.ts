@@ -7,10 +7,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 
 import { MaterialModule } from '../material/material.module';
 import { ArchivosDescargablesComponent } from './components/archivos-descargables/archivos-descargables.component';
+import { SegSituaTerritorioComponent } from './components/seg-situa-territorio/seg-situa-territorio.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, ArchivosDescargablesComponent],
+  declarations: [IndexComponent, ArchivosDescargablesComponent, SegSituaTerritorioComponent],
   imports: [
     CommonModule,
     ObservatorioRoutingModule,

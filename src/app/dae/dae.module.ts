@@ -16,6 +16,10 @@ import { SujetosEtnicosRegistroComponent } from './components/sujetos-etnicos-re
 import { ReparacionColectivaComponent } from './components/reparacion-colectiva/reparacion-colectiva.component';
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 import { SegMedidaIndemColectivaComponent } from './components/seg-medida-indem-colectiva/seg-medida-indem-colectiva.component';
+import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
+import { RetornoHogaresComponent } from './components/retorno-hogares/retorno-hogares.component';
+import { SsvComponent } from './components/ssv/ssv.component';
+import { IndividualComponent } from './components/individual/individual.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { SegMedidaIndemColectivaComponent } from './components/seg-medida-indem-
     SujetosEtnicosRegistroComponent,
     ReparacionColectivaComponent,
     RetornosReubicacionesComponent,
-    SegMedidaIndemColectivaComponent],
+    SegMedidaIndemColectivaComponent,
+    EnConstruccionComponent,
+    RetornoHogaresComponent,
+    SsvComponent,
+    IndividualComponent],
   imports: [
     CommonModule,
     DaeRoutingModule,

@@ -19,6 +19,7 @@ import { InfoProyOfertadosComponent } from './components/info-proy-ofertados/inf
 import { OcadPazComponent } from './components/ocad-paz/ocad-paz.component';
 import { JornadasFortalecimientoComponent } from './components/jornadas-fortalecimiento/jornadas-fortalecimiento.component';
 import { FortalecimientoComponent } from './components/fortalecimiento/fortalecimiento.component';
+import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FortalecimientoComponent } from './components/fortalecimiento/fortaleci
     InfoProyOfertadosComponent,
     OcadPazComponent,
     JornadasFortalecimientoComponent,
-    FortalecimientoComponent
+    FortalecimientoComponent,
+    EnConstruccionComponent
   ],
   imports: [
     CommonModule,

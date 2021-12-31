@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoProyOfertadosComponent implements OnInit {
   title = 'INFORMACIÓN DE PROYECTOS OFERTADOS POR LA UNIDAD';
-  panelOpenState = false;
+
   constructor() { }
 
   ngOnInit(): void {

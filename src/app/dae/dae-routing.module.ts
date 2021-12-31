@@ -14,6 +14,10 @@ import { SujetosEtnicosRegistroComponent } from './components/sujetos-etnicos-re
 import { ReparacionColectivaComponent } from './components/reparacion-colectiva/reparacion-colectiva.component';
 import { RetornosReubicacionesComponent } from './components/retornos-reubicaciones/retornos-reubicaciones.component';
 import { SegMedidaIndemColectivaComponent } from './components/seg-medida-indem-colectiva/seg-medida-indem-colectiva.component';
+import { EnConstruccionComponent } from './components/en-construccion/en-construccion.component';
+import { RetornoHogaresComponent } from './components/retorno-hogares/retorno-hogares.component';
+import { SsvComponent } from './components/ssv/ssv.component';
+import { IndividualComponent } from './components/individual/individual.component';
 
 const routes: Routes = [
   {
@@ -71,6 +75,22 @@ const routes: Routes = [
       {
         path: 'Seg_Medida_Indem_Colectiva',
         component: SegMedidaIndemColectivaComponent
+      },
+      {
+        path: 'en_construccion',
+        component: EnConstruccionComponent
+      },
+      {
+        path: 'retorno_hogares',
+        component: RetornoHogaresComponent
+      },
+      {
+        path: 'ssv',
+        component: SsvComponent
+      },
+      {
+        path: 'individual',
+        component: IndividualComponent
       }
     ]
   }
